@@ -10,11 +10,11 @@ export default function Page() {
         <AcmeLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-3/5 md:px-20">
+        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 dark:bg-gray-800 px-6 py-10 md:w-3/5 md:px-20">
           <div
             className='h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-indigo-500 border-l-transparent border-r-transparent'
           />
-          <p className={`text-lg text-gray-800 md:text-xl md:leading-normal`}>
+          <p className={`text-lg text-gray-800 dark:text-gray-50 md:text-xl md:leading-normal`}>
             <strong>Welcome to Alpha.</strong> <br /> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-indigo-500">
               Next.js Learn Course
