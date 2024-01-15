@@ -6,24 +6,24 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-4">
-      <div className="flex h-24 shrink-0 items-end rounded-lg bg-indigo-500 p-4 md:h-40">
+      <div className="flex h-24 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-40">
         <AcmeLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 dark:bg-gray-800 px-6 py-10 md:w-3/5 md:px-20">
           <div
-            className='h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-indigo-500 border-l-transparent border-r-transparent'
+            className='h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-blue-500 border-l-transparent border-r-transparent'
           />
           <p className={`text-lg text-gray-800 dark:text-gray-50 md:text-xl md:leading-normal`}>
             <strong>Welcome to Alpha.</strong> <br /> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-indigo-500">
+            <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
           </p>
           <Link
             href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-indigo-500 px-6 py-3 text-sm font-medium shadow-xl text-white transition-colors hover:bg-indigo-400 md:text-base"
+            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium shadow-xl text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
