@@ -1,13 +1,13 @@
 import {
     Inter,
-    PT_Serif_Caption
+    Lusitana
 } from 'next/font/google'
 
 export const inter = Inter({
     subsets: ['latin']
 })
 
-export const ptSerifCaption = PT_Serif_Caption({
+export const lusitana = Lusitana({
     subsets: ['latin'],
     weight: '400'
 })
