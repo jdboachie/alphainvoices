@@ -15,7 +15,7 @@ export default function Page() {
             className='h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-blue-500 border-l-transparent border-r-transparent'
           />
           <p className={`text-lg text-gray-800 dark:text-gray-50 md:text-xl md:leading-normal`}>
-            <strong>Welcome to Alpha.</strong> <br /> This is the example for the{' '}
+            <strong>Welcome to Alpha Records</strong> <br /> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
             </a>
@@ -28,7 +28,7 @@ export default function Page() {
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link> */}
           <div
-            className=" flex items-center gap-5 self-start rounded-lg bg-zinc-500 px-6 py-3 text-sm font-medium shadow-xl text-white transition-colors hover:bg-zinc-400 md:text-base"
+            className="cursor-not-allowed flex items-center gap-5 self-start rounded-lg bg-zinc-500 px-6 py-3 text-sm font-medium shadow-xl text-white transition-colors hover:bg-zinc-400 md:text-base"
             >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </div>

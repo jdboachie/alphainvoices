@@ -1,7 +1,7 @@
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
+import { alegreya } from '@/app/ui/fonts';
 import { LatestInvoice } from '@/app/lib/definitions';
 import { fetchLatestInvoices } from '@/app/lib/data';
 
@@ -10,12 +10,10 @@ export default async function LatestInvoices() {
 
   return (
     <div className="flex w-full flex-col md:col-span-4">
-      <h2 className={`${lusitana.className} mb-4 text-sm md:text-lg`}>
+      <h2 className={`${alegreya.className} mb-4 text-sm md:text-lg`}>
         Latest Invoices
       </h2>
-      <div className="flex grow flex-col justify-between rounded-lg bg-zinc-50 dark:bg-zinc-900 p-4">
-        {/* NOTE: comment in this code when you get to this point in the course */}
-
+      <div className="flex grow flex-col justify-between rounded-lg shadow-lg bg-zinc-50 dark:bg-zinc-900 p-4">
         <div className="bg-white rounded-md dark:bg-black px-6">
           {latestInvoices.map((invoice, i) => {
             return (
@@ -46,7 +44,7 @@ export default async function LatestInvoices() {
                   </div>
                 </div>
                 <p
-                  className={`${lusitana.className} truncate text-sm font-medium md:text-base font-mono`}
+                  className={`${alegreya.className} truncate text-sm font-medium md:text-base font-mono`}
                 >
                   {invoice.amount}
                 </p>

@@ -4,7 +4,7 @@ import {
   UserGroupIcon,
   InboxIcon,
 } from '@heroicons/react/24/outline';
-import { lusitana } from '@/app/ui/fonts';
+import { alegreya } from '@/app/ui/fonts';
 import { fetchCardData } from '@/app/lib/data';
 
 const iconMap = {
@@ -52,13 +52,13 @@ export function Card({
   const Icon = iconMap[type];
 
   return (
-    <div className="rounded-lg bg-zinc-50 dark:bg-zinc-900 p-2 shadow-sm">
+    <div className="rounded-lg shadow-lg bg-zinc-50 dark:bg-zinc-900 p-2">
       <div className="flex p-4">
         {Icon ? <Icon className="h-5 w-5 text-zinc-700 dark:text-zinc-50" /> : null}
         <h3 className="ml-2 text-sm font-medium">{title}</h3>
       </div>
       <p
-        className={`${lusitana.className}
+        className={`${alegreya.className}
           truncate rounded-md bg-white dark:bg-black px-4 py-8 text-center text-xl`}
       >
         {value}

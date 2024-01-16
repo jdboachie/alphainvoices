@@ -10,6 +10,7 @@ import {
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Button } from '@/app/ui/button';
+import { useState } from 'react';
 
 export default function EditInvoiceForm({
   invoice,
@@ -20,6 +21,7 @@ export default function EditInvoiceForm({
 }) {
 
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
+  const [ submitted, setSubmitted ] = useState(false)
 
   return (
     <form action={updateInvoiceWithId}>
@@ -120,7 +122,14 @@ export default function EditInvoiceForm({
         >
           Cancel
         </Link>
-        <Button type="submit">Edit Invoice</Button>
+        <Button
+          type="submit"
+          onClick={() => {setSubmitted(true)}}
+        >{submitted ? (
+          <div >Submitting...</div>
+        ):(
+          <div>Edit Invoice</div>
+        )}</Button>
       </div>
     </form>
   );
