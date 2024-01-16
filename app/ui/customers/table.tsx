@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { alegreya } from '@/app/ui/fonts';
+import { bricolage_grotesque } from '@/app/ui/fonts';
 import Search from '@/app/ui/search';
 import {
   CustomersTableType,
@@ -13,7 +13,7 @@ export default async function CustomersTable({
 }) {
   return (
     <div className="w-full">
-      <h1 className={`${alegreya.className} mb-8 text-xl md:text-2xl`}>
+      <h1 className={`${bricolage_grotesque.className} mb-8 text-xl md:text-2xl`}>
         Customers
       </h1>
       <Search placeholder="Search customers..." />

@@ -1,6 +1,6 @@
 import { generateYAxis } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
-import { alegreya } from '@/app/ui/fonts';
+import { bricolage_grotesque } from '@/app/ui/fonts';
 import { Revenue } from '@/app/lib/definitions';
 import { fetchRevenue } from '@/app/lib/data';
 
@@ -24,7 +24,7 @@ export default async function RevenueChart() {
 
   return (
     <div className="w-full md:col-span-4">
-      <h2 className={`${alegreya.className} mb-4 text-sm md:text-lg`}>
+      <h2 className={`${bricolage_grotesque.className} mb-4 text-sm md:text-lg`}>
         Recent Revenue
       </h2>
       <div className="rounded-lg shadow-lg bg-zinc-50 dark:bg-zinc-900 p-4">

@@ -1,7 +1,7 @@
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { alegreya } from '@/app/ui/fonts';
+import { bricolage_grotesque } from '@/app/ui/fonts';
 import { LatestInvoice } from '@/app/lib/definitions';
 import { fetchLatestInvoices } from '@/app/lib/data';
 
@@ -10,7 +10,7 @@ export default async function LatestInvoices() {
 
   return (
     <div className="flex w-full flex-col md:col-span-4">
-      <h2 className={`${alegreya.className} mb-4 text-sm md:text-lg`}>
+      <h2 className={`${bricolage_grotesque.className} mb-4 text-sm md:text-lg`}>
         Latest Invoices
       </h2>
       <div className="flex grow flex-col justify-between rounded-lg shadow-lg bg-zinc-50 dark:bg-zinc-900 p-4">
@@ -35,7 +35,7 @@ export default async function LatestInvoices() {
                     height={32}
                   />
                   <div className="min-w-0">
-                    <p className="truncate text-sm font-semibold md:text-base">
+                    <p className="truncate text-sm font-[500] md:text-base">
                       {invoice.name}
                     </p>
                     <p className="hidden text-sm text-gray-500 sm:block">
@@ -44,7 +44,7 @@ export default async function LatestInvoices() {
                   </div>
                 </div>
                 <p
-                  className={`${alegreya.className} truncate text-sm font-medium md:text-base font-mono`}
+                  className={`${bricolage_grotesque.className} truncate text-sm font-medium md:text-base font-mono`}
                 >
                   {invoice.amount}
                 </p>

@@ -1,13 +1,16 @@
 import { GlobeAltIcon } from '@heroicons/react/24/outline';
-import { alegreya } from '@/app/ui/fonts';
+import { bricolage_grotesque } from '@/app/ui/fonts';
 
-export default function AcmeLogo() {
+export default function AcmeLogo({center} : {center?: boolean}) {
   return (
     <div
-      className={`${alegreya.className} flex flex-row items-center leading-none text-white`}
+      className={`${bricolage_grotesque.className} flex flex-col ${center? (`items-center`): (`items-start`)} leading-none text-white`}
     >
-      <GlobeAltIcon className="h-12 w-12 rotate-[35deg]" />
-      <p className="text-4xl">Alpha</p>
+      <div className={`flex flex-col w-full ${ center? ('text-2xl items-center') : ('') }`}>
+        <GlobeAltIcon className='h-14 w-12 rotate-[25deg]' />
+        <p className="text-xl font-semibold">Love Economy Church</p>
+      </div>
+      <p className="text-sm text-zinc-200">Alpha</p>
     </div>
   );
 }

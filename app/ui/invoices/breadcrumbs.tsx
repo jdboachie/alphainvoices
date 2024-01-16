@@ -1,6 +1,6 @@
 import { clsx } from 'clsx';
 import Link from 'next/link';
-import { alegreya } from '@/app/ui/fonts';
+import { bricolage_grotesque } from '@/app/ui/fonts';
 
 interface Breadcrumb {
   label: string;
@@ -15,7 +15,7 @@ export default function Breadcrumbs({
 }) {
   return (
     <nav aria-label="Breadcrumb" className="mb-6 block">
-      <ol className={clsx(alegreya.className, 'flex text-lg md:text-xl')}>
+      <ol className={clsx(bricolage_grotesque.className, 'flex text-lg md:text-xl')}>
         {breadcrumbs.map((breadcrumb, index) => (
           <li
             key={breadcrumb.href}

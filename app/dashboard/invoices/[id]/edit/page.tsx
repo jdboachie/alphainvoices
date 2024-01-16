@@ -14,7 +14,7 @@ export default async function Page(
   ]);
 
   if (!invoice) {
-    notFound();
+    return notFound();
   }
 
   return (

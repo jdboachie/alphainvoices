@@ -1,13 +1,13 @@
 import {
     Inter,
-    Alegreya,
+    Bricolage_Grotesque,
 } from 'next/font/google'
 
 export const inter = Inter({
     subsets: ['latin']
 })
 
-export const alegreya = Alegreya({
+export const bricolage_grotesque = Bricolage_Grotesque({
     subsets: ['latin'],
-    weight: '400'
+    // weight: '400'
 })
