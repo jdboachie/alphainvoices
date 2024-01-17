@@ -10,9 +10,9 @@ export default function Page() {
         <AcmeLogo center />
       </div>
       <div className="mt-4 md:p-0 py-10 rounded-lg md:bg-gray-50 md:dark:bg-gray-800 h-full flex">
-        <div className="flex flex-col justify-center w-full items-center gap-6 px-6 py-10 md:px-20">
-          <p className={`text-2xl md:w-2/3 text-black dark:text-gray-50 md:text-5xl md:leading-normal`}>
-            <strong className={`md:p-10 p-2 ${bricolage_grotesque.className}`}>Welcome to Alpha Invoices</strong>
+        <div className="flex flex-col justify-center w-full items-center gap-6 px-2 py-10 md:px-20">
+          <p className={`text-3xl md:w-2/3 text-black dark:text-gray-50 md:text-5xl md:leading-normal`}>
+            <strong className={`md:p-10 py-2 ${bricolage_grotesque.className}`}>Welcome to Alpha Invoices</strong>
             <p className="text-sm py-5 md:px-10">
               When you have some text, how can you choose a typeface? The aim of this Google Fonts Knowledge module is to show that there are many considerations that can improve our type choices.
             </p>
