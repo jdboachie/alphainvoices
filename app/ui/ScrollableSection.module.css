@@ -1,0 +1,15 @@
+.scrollableSection {
+    max-height: 100vh; /* Set a maximum height for the scrollable section */
+    overflow-y: auto;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+  }
+
+  .scrollableSection::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+
+  .scrollableSection::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Color of the thumb */
+  }
